@@ -1,24 +1,22 @@
-var charName = document.getElementById('txtChar')
-var charContainer = document.getElementById('show-info')
-var btn = document.getElementById('btn')
+let charName = document.getElementById('txtChar')
+let charContainer = document.getElementById('show-info')
+let btn = document.getElementById('btn')
 
 // when press the button: //
 btn.addEventListener('click', function () {
   document.getElementById('show-info').innerHTML = ''
 
-  var ourRequest = new XMLHttpRequest()
+  let ourRequest = new XMLHttpRequest()
 
   ourRequest.open(
     'GET',
     'https://api.tibiadata.com/v2/characters/' + charName.value + '.json'
-  ) // se eu quiser enviar requisicao coloco POST em vez de GET
+  )
 
   ourRequest.onload = function () {
-    var ourData = JSON.parse(ourRequest.responseText)
-    //console.log(ourData.characters.data);
-    //renderHTML(ourData);
+    let ourData = JSON.parse(ourRequest.responseText)
 
-    var htmlString = ''
+    let htmlString = ''
     htmlString += '<p> Name: ' + ourData.characters.data.name + '</p>'
     htmlString += '<p> Vocation: ' + ourData.characters.data.vocation + '</p>'
     htmlString += '<p> Level: ' + ourData.characters.data.level + '</p>'
@@ -35,7 +33,7 @@ btn.addEventListener('click', function () {
       ourData.characters.data.status +
       '</p>'
 
-    var otherChars = ourData.characters.other_characters
+    let otherChars = ourData.characters.other_characters
 
     for (i = 0; i < otherChars.length; i++) {
       htmlString +=
@@ -44,7 +42,6 @@ btn.addEventListener('click', function () {
         ' - <strong> Status: </strong>' +
         otherChars[i].status +
         '</p>'
-      //htmlString += "<p> Status: " + otherChars[i].status + "</p>";
     }
 
     charContainer.insertAdjacentHTML('beforeend', htmlString)
