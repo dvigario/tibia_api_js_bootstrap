@@ -18,6 +18,12 @@ Consuming Tibia MMORPG API. Character search - JS and Bootstrap
 
 Print screen of usage examples:
 
+
+<img src="source/img/screen01.png" alt="teste" width="350em">
+
+<img src="source/img/screen02.png" alt="teste" width="350em">
+
+
 ![Screen 01](/source/img/screen01.png)
 
 ![Screen 01](/source/img/screen02.png)
