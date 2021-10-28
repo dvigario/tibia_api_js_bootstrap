@@ -12,7 +12,7 @@
 ---
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-tibia_api_js_bootstrap
+tibia_api_js_bootstrap - powered by DViga ❤️
 
 ## Consuming Tibia MMORPG API. Character search - JS and Bootstrap
 
