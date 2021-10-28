@@ -16,7 +16,7 @@ tibia_api_js_bootstrap
 
 ## Consuming Tibia MMORPG API. Character search - JS and Bootstrap
 
-Print screen of usage examples:
+Screenshots of usage examples:
 
 
 <img src="source/img/screen01.png" alt="First Screenshot" width="500em">
